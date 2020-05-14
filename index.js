@@ -77,9 +77,17 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp,deg) {
+  if (deg === 'F'){
+    return(temp+'F')
+  } else {
+  let fTemp = Math.round(temp * (9/5) + 32)
+  return(fTemp+'F');
+  } 
+
 }
+console.log(temperatureInF(88,'F'));
+console.log(temperatureInF(24,'C'));
 
 
 /**
@@ -312,4 +320,3 @@ function getGermanCars(/* code here */) {
 function carMaker(/* code here */) {
   /* code here */
 }
-
