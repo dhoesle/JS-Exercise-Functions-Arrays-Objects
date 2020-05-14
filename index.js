@@ -122,7 +122,7 @@ console.log(makePersonObject(5, 'Leia', 'leia@leia.com'));
  * ### Challenge `getName`
  * 
  * @instructions
- * This function takes as its only argument
+ * This function takes, as its only argument,
  * an object containing a `name` property,
  * and return a string that reads `Hello, my name is {name}`,
  * where `{name}` is the name stored in the object.
@@ -131,10 +131,11 @@ console.log(makePersonObject(5, 'Leia', 'leia@leia.com'));
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
-}
 
+function getName(nameVal) {
+  return ('Hello, my name is '+nameVal.name)
+}
+console.log(getName ({ id: 1, name: 'Leia', email: 'leia@leia.com' }))
 
 /**
  * ### Challenge `appleIndex`
