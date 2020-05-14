@@ -152,10 +152,11 @@ console.log(getName ({ id: 1, name: 'Leia', email: 'leia@leia.com' }))
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+let fruit = [ 'orange', 'grape', 'apple', 'banana', 'mango' ];
+function appleIndex(array) {
+  console.log(fruit.indexOf('apple'))
 }
-
+appleIndex(fruit)
 /**
  * ### Challenge `isItAnApple`
  * 
