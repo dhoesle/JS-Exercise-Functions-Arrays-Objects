@@ -272,10 +272,11 @@ console.log(get3rdCar(inventory));
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  
+  const carInfo = inventory[index];
+  return `The is a ${carInfo.car_make} ${carInfo.car_model}`
 
 }
-getCarInfoByIndex(inventory, 0);
+console.log(getCarInfoByIndex(inventory, 0));
 /**
  * ### Challenge `getLastCarInfo`
  * 
